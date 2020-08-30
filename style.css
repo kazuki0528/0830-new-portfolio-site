@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+.cb{
+  /* floatを解除 */
+  clear: both;
+}
+
+li{
+  list-style: none;
+}
+/* ========================================
+    ヘッダー
+========================================= */
+header{
+  background-color:  #d5d4d4;
+  width:100%;
+  height: 180px;
+}
+
+.header-wrapper{
+  width:980px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.header-wrapper h1{
+position: absolute;
+width: 359px;
+height: 73px;
+left: 180px;
+top: 65px;
+
+font-family: Six Caps;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 66px;
+
+color: #000000;
+}
+
+.header-wrapper p{
+position: absolute;
+width: 384px;
+height: 32px;
+left: 234px;
+top: 147px;
+
+font-family: Roboto Mono;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 28px;
+
+color: #000000;
+}
+
+.header-wrapper ul{
+  position: absolute;
+  left: 720px;
+  top: 140px;
+}
+
+.header-wrapper ul li{
+  float: left;
+  width:100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.header-wrapper ul li a{
+  text-decoration: none;
+  color: #000;
+  display:block;
+}
+
+.header-wrapper ul li a#top{
+  color: #FE6B6B;
+  font-weight: bold;
+}
+
+.header-wrapper ul li a:hover{
+  text-decoration: underline;
+  opacity: 0.6;
+}
+
+/* ========================================
+    メイン
+========================================= */
+main{
+  background-color: #d5d4d4;
+  width: 100%;
+  height: 600px;
+}
+
+.main-wrapper{
+  width: 980px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.main-image{
+  width:450px;
+  height: auto;
+  float: left;
+  margin-top:90px;
+}
+
+.main-image img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover; 
+  border-radius: 50%;
+}
+
+.main-content{
+  width:530px;
+  height: 600px;
+  float: right;
+}
+
+.main-title{
+  margin-top: 50px;
+}
+
+.main-title h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  line-height: 98px;
+  letter-spacing: 4px;
+}
+
+.main-title p{
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 50px;
+  padding-left:70px;
+  letter-spacing: 2px;
+}
+
+.main-btn{
+  margin-top:65px;
+  margin-bottom: 45px;
+}
+.main-btn ul li{
+  display: block;
+  float: left;
+  width: 120px;
+  height: 120px;
+  margin-right:45px ;
+  border-radius: 50%;
+  line-height: 120px;
+  text-align: center;
+  
+}
+
+.main-btn ul li#red{
+  background-color: #FE686B;
+}
+
+.main-btn ul li#blue{
+  background-color:#70D9FB;
+}
+.main-btn ul li#green{
+  background-color:#3FF53B;
+}
+
+.main-btn ul li a{
+  text-decoration: none;
+  color: rgba(6, 5, 5, 0.77);
+  display: block;
+}
+
+.main-btn ul li a:hover{
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.main-text{
+  width: 490px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   フッター
+========================================= */
+footer{
+  background-color: #FE6B6B;
+  width: 100%;
+  height: 70px;
+
+}
+
+.footer-wrapper{
+  width: 980px;
+  height: 70px;
+  margin: 0 auto;   
+  display: flex;
+ 
+}
+
+.address{
+  text-align: center;
+  justify-content: space-between;
+  margin-right: 573.5px;
+}
+
+
+
+.address li{
+ margin-top: 30px;
+ float: left;
+ text-align: center;
+ margin-right: 15px;
+}
+
+.address li .phone{
+  width:35px;
+  height:35px;
+}
+
+.address li .mail{
+  width:35px;
+  height:35px;
+  
+}
+
+.address li a{
+  display: inline-block;
+  vertical-align : top;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(6, 5, 5, 0.77);
+}
+
+.address li a:hover{
+  opacity: 0.6;
+}
+
+.sns li{
+  float: left;
+  text-align: center;
+  margin-top: 30px;
+  color: rgba(6, 5, 5, 0.77);
+  font-size: 12px;
+  vertical-align : middle;
+  margin-left: 5px;
+}
+
+.sns li .facebook{
+  width:35px;
+  height:35px;
+}
+
+.sns li .twitter{
+  width:35px;
+  height:35px;
+}
+
+.sns li a:hover{
+  opacity: 0.6;
+}
+
+.end{
+  background-color:  #FE6B6B;
+}
+
+.end p{
+ text-align: center;
+ font-size: 14px;
+ color: rgba(6, 5, 5, 0.77);
+ padding-bottom: 8px;
+}
